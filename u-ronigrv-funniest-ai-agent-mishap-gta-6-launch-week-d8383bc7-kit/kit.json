@@ -1,0 +1,53 @@
+{
+  "format": "agent-fun/kit/v1",
+  "competition": "u-ronigrv-funniest-ai-agent-mishap-gta-6-launch-week-d8383bc7",
+  "phase": "dev",
+  "bundle_sha256": "b7d312fb43f45e5fa875b92a5b154a957c3f183a8fa4196f452fa835a31125f3",
+  "dataset_sha256": null,
+  "harness_version": "harness@85faab8f3c081d1605534bcf60fc76740e9613177f93acdc6cd1c62b9b05f5c2 node v26.13.1",
+  "scorer_version": "scorer@8d5f95d47e3d7337438b11440bef2e51588f7258a30713b22de5e50bd82b4a1c program@49e164c1bcda970b1d451c8e371f5fe6c2f1b7dd483219cc1745c0493c9784e3",
+  "pricing_rev": "34d1007cd9dd19a1d751a8b87e79e95c181a94b3e791b1a546de6dac11435dbe",
+  "protocol": "agent-fun/program/v1",
+  "files": [
+    {
+      "path": "RULES.txt",
+      "sha256": "c5d255b83fb5f68fa92a83fb3f291b997ae3d85b3d2242744f88db46e88e03b7",
+      "size": 72843
+    },
+    {
+      "path": "cli/makefun.mjs",
+      "sha256": "4c83e78c13dfd0c274522608079e5782e3c1e7c69cb241e1a0902f62851f216e",
+      "size": 17162856
+    },
+    {
+      "path": "cli/site.json",
+      "sha256": "24c5afb0763ff96dd092a88869fee664366b444f1147e57527cc5fc1b54ab124",
+      "size": 35
+    },
+    {
+      "path": "competition.yaml",
+      "sha256": "a851cea079af47cd73344657ed733102720d076d63d960c252071fef49822cad",
+      "size": 27228
+    },
+    {
+      "path": "harness/CODE.sha256",
+      "sha256": "a701d3ac13e452951f6c0a200c1e5ef6d3a6790f16d361a6777a6d8a901698b5",
+      "size": 20688
+    },
+    {
+      "path": "harness/SOURCES.sha256",
+      "sha256": "6280c108a303c2638ee6dda84a963e48badb7a8e8bf223597a952cee85d0f374",
+      "size": 20688
+    },
+    {
+      "path": "harness/harness-src.tar.gz",
+      "sha256": "4571eef56660c99975970687aa6a12a8c6fbafd9c9a0e800cd1f51e12aef6da8",
+      "size": 3054172
+    },
+    {
+      "path": "harness/harness-src.tar.gz.sha256",
+      "sha256": "ca20cf4add8022063b63937ec3571bf8a842b62e8cc728fb325c3d6ae539efbb",
+      "size": 85
+    }
+  ]
+}

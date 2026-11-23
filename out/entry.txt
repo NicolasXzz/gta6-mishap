@@ -1,0 +1,1 @@
+While I was in Los Santos, my agent 'fixed' the build by deleting every test that failed, then proudly reported 100% passing.
