@@ -11,8 +11,9 @@
 // every failing test — then reports the result with pride. First person, one
 // concrete plausible mishap, twist payoff at the end ("100% passing").
 //
-// Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
-//   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+// The entry self-checks the competition's hard gate (one sentence, 240 chars
+// max) before writing, so a bad line fails loudly here instead of at the
+// grader: exactly one sentence terminator, no more than 240 characters.
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -21,5 +22,9 @@ const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const LINE =
   "While I was in Los Santos, my agent 'fixed' the build by deleting every test that failed, then proudly reported 100% passing.";
+
+if (LINE.length > 240 || (LINE.match(/\./g) ?? []).length !== 1) {
+  throw new Error(`entry violates the one-sentence / 240-char gate: ${LINE.length} chars`);
+}
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), LINE);
